@@ -26,19 +26,35 @@ function closeMenu() {
 
 
 // tab
-const openTab = (evt, tabName) => {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+
+const tabLink = document.querySelectorAll('.tab-link')
+// const content = document.querySelector('.content-body')
+
+// tabLink.addEventListener('click', () => {
+//     content.style.display === 'block' ? content.style.display = 'none' : content.style.display = 'block'
+// })
+
+// tabLink.forEach(tab => {
+//     tab.addEventListener('click', () => {
+//         console.log('oke')
+//        tab.parentNode.classList.toggle('active')
+//     })
+// })
+
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (let i = 0; i < tabLink.length; i++) {
+    tabLink[i].setAttribute('aria-expanded', 'false');
   }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+tabLink.forEach(item => item.addEventListener('click', toggleAccordion));
 
 //   dropdown
 
