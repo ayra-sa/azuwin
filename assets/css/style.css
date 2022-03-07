@@ -151,6 +151,10 @@
       margin-top: 40px;
   }
 
+  .mt-top {
+      margin-top: 10%;
+  }
+
   .mr {
       position: relative;
       display: flex;
@@ -160,12 +164,13 @@
   }
 
   .t {
-      margin-right: -50% !important;
+      margin-right: -20% !important;
   }
 
   .ml {
       position: relative;
       margin-left: -15%;
+      white-space: nowrap;
   }
 
   .center {
@@ -255,6 +260,7 @@
     border: 1px solid var(--brand);
     font-weight: 600;
     color: var(--brand);
+    background-color: transparent;
 }
 
 .btn-secondary:hover {
@@ -441,6 +447,7 @@
       align-items: center;
       color: var(--brand);
       font-weight: 700;
+      cursor: pointer !important;
   }
 
   /* ----- TOTAL SERVICES ----- */
@@ -623,7 +630,7 @@
 /* ----- FOOTER ------ */
 
 footer {
-    background-image: url('../images/footer-bg.png');
+    background-image: url('../images/bg-footer.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -815,6 +822,10 @@ footer .grid {
         flex-direction: column;
     }
 
+    .mt-top {
+        margin-top: 25%;
+    }
+
     .flex {
         flex-direction: column;
     }
@@ -837,7 +848,7 @@ footer .grid {
     }
 
     footer {
-        background-image: url('../images/bg-footer-mobo.png');
+        background-image: url('../images/bg-footer-mobo.svg');
     }
 
     footer .brand {

@@ -18,12 +18,52 @@
 
 </head>
 <body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <a href="index.html" class="brand">
+                        <img src="assets/images/logo.svg" alt="brand">
+                    </a>
+        
+                    <ul class="nav-menu">
+                        <li><a href="company.html" class="nav-link active">Company</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="work.html" class="nav-link">Work</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                  <img src="assets/images/global.svg" alt="icon">
+                                </button>
+                                <div class="language">
+                                  <a href="#">English</a>
+                                  <a href="#">日本語</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li><a href="#contact">
+                            <button class="btn btn-secondary">Contact</button>
+                        </a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+    </header>
+
     <main>
 
-        <h1 class="section-top-title center">Company</h1>
+        <h1 class="section-top-title center mt-top">Company</h1>
 
         <!-- Company -->
-        <section class="section-2">
+        <section class="section">
             <div class="decor">
                 <img src="assets/images/ellipse-decor.svg" alt="decor">
             </div>
@@ -45,7 +85,7 @@
                     </div>
 
                     <div class="section-content">
-                        <img src="assets/images/company-img.png" alt="company">
+                        <img src="assets/images/vision.svg" alt="company">
                     </div>
                 </div>
             </div>
@@ -69,7 +109,7 @@
                     </div>
 
                     <div class="section-content">
-                        <img src="assets/images/our-mission.png" alt="mission">
+                        <img src="assets/images/mission.svg" alt="mission">
                     </div>
                 </div>
             </div>
@@ -86,6 +126,13 @@
                 <img src="assets/images/ellipse-decor2.svg" alt="decor">
             </div>
 
+            <div class="decor d-left" style="bottom: 0;">
+                <img src="assets/images/value-decor2.svg" alt="decor">
+            </div>
+            <div class="decor right">
+                <img src="assets/images/value-decor.svg" alt="decor">
+            </div>
+
             <div class="container">
                 <div class="flex">
                     <div class="section-content">
@@ -96,7 +143,7 @@
                         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     </div>
 
-                    <div class="section-content">
+                    <div class="section-content mt-2">
                         <div class="glass-box">
                             <div class="c mt-2">
                                 <div class="c-list">
@@ -143,11 +190,15 @@
         
         <!-- Compro -->
         <section class="section-2">
-            <div class="decor top">
+            <div class="decor d-left" style="bottom: 0;">
                 <img src="assets/images/ellipse-decor.svg" alt="decor">
             </div>
-            <div class="decor right">
+            <div class="decor right" style="bottom: 0;">
                 <img src="assets/images/ellipse-decor2.svg" alt="decor">
+            </div>
+
+            <div class="decor" style="left: 10%; bottom: 0;">
+                <img src="assets/images/compro.svg" alt="decor">
             </div>
 
             <div class="container">
@@ -180,6 +231,55 @@
             </div>
         </section>
         <!-- Compro end -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
+                <div class="grid mt-2">
+                    <div class="footer-left">
+                        <div class="w">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
+                        </div>
+                        <div class="flex mt-4">
+                            <div class="socmed">
+                                <a href="#"><img src="assets/images/fb.svg" alt="socmed"></a>
+                                <a href="#"><img src="assets/images/ig.svg" alt="socmed"></a>
+                                <a href="#"><img src="assets/images/twitter.svg" alt="socmed"></a>
+                                <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
+                            </div>
+                            <div class="language-btn">
+                                <img src="assets/images/global-white.svg" alt="language">
+                                English
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-3">
+                        <ul class="footer-menu">
+                            <li>Company</li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="footer-menu">
+                            <li>Services</li>
+                            <li><a href="#">Digital Solutions</a></li>
+                            <li><a href="#">Website Production</a></li>
+                            <li><a href="#">System Development</a></li>
+                        </ul>
+                        <ul class="footer-menu">
+                            <li>Policy</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
     </main>
     <!-- js -->
     <script src="assets/js/main.js"></script>
