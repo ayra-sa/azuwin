@@ -485,10 +485,10 @@ section {
     padding-bottom: 10%;
 }
 
-.content {
+.content-body {
     width: 50%;
     position: relative;
-    border-left: 4px solid #fff;
+    border-left: 4px solid transparent;
     min-height: 40px;
     transition: .3s ease-in;
     height: max-content;
@@ -501,16 +501,17 @@ section {
     -o-transition: .3s ease-in;
 }
 
-.tab-link[aria-expanded=true] .content-body,
-.tab-link[aria-expanded=true] .tab-content {
+.tab-link.active .content-body,
+.tab-link.active .tab-content {
     display: block;
 }
 
-.tab-link[aria-expanded=true] .content {
+.tab-link.active .content-body,
+.tab-link.active h2 {
     border-left: 4px solid var(--brand);
 }
 
-.tab-link[aria-expanded=true] h2 {
+.tab-link.active h2 {
     color: var(--brand);
 }
 
@@ -522,11 +523,24 @@ section {
     margin-bottom: 10px;
     position: relative;
     z-index: 3;
-    cursor: pointer;
 }
 
 .tab-link h2:hover {
     color: var(--brand);
+}
+
+.tab-link h2 {
+    cursor: pointer;
+    border-left: 4px solid #fff;
+    margin-left: auto;
+    width: 50%;
+    padding-left: 20px;
+    line-height: 40px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
 }
 
 .content-body {
@@ -1019,9 +1033,11 @@ footer .grid {
     .container {
         max-width: 1140px;
     }
-    .absolute {
+    /* .absolute {
         position: relative;
-        /* margin-right: -8%; */
+    } */
+    #communication img {
+        width: 50vw;
     }
 }
 

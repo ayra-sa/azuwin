@@ -39,7 +39,7 @@ window.onscroll = () => {
 // tab
 
 const tabLink = document.querySelectorAll('.tab-link')
-const tabTitle = document.querySelectorAll('.content')
+const tabTitle = document.querySelectorAll('.tab-title')
     // const content = document.querySelector('.content-body')
 
 // tabLink.addEventListener('click', () => {
@@ -54,19 +54,37 @@ const tabTitle = document.querySelectorAll('.content')
 // })
 
 
-function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
+for (i = 0; i < tabTitle.length; i++) {
 
-    for (let i = 0; i < tabLink.length; i++) {
-        tabLink[i].setAttribute('aria-expanded', 'false');
-    }
+    tabTitle[i].onclick = function() {
 
-    if (itemToggle == 'false') {
-        this.setAttribute('aria-expanded', 'true');
+        var contentClass = this.parentNode.className;
+
+        for (i = 0; i < tabLink.length; i++) {
+            tabLink[i].className = 'tab-link';
+        }
+
+        if (contentClass == 'tab-link') {
+            this.parentNode.className = 'tab-link active';
+        } else {
+            this.parentNode.className = 'tab-link';
+        }
     }
 }
 
-tabLink.forEach(item => item.addEventListener('click', toggleAccordion));
+// function toggleAccordion() {
+//     const itemToggle = this.getAttribute('aria-expanded');
+
+//     for (let i = 0; i < tabLink.length; i++) {
+//         tabLink[i].setAttribute('aria-expanded', 'false');
+//     }
+
+//     if (itemToggle == 'false') {
+//         this.setAttribute('aria-expanded', 'true');
+//     }
+// }
+
+// tabLink.forEach(item => item.addEventListener('click', toggleAccordion));
 
 //   dropdown
 
