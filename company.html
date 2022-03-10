@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,19 +18,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" data-aos="zoom-up">
             <div class="container">
                 <div class="navbar-wrap">
                     <a href="index.html" class="brand">
                         <img src="assets/images/logo.svg" alt="brand">
                     </a>
-        
+
                     <ul class="nav-menu">
-                        <li><a href="company.html" class="nav-link active">Company</a></li>
+                        <li><a href="company.html" class="nav-link">Company</a></li>
                         <li><a href="#" class="nav-link">Services</a></li>
                         <li><a href="work.html" class="nav-link">Work</a></li>
                         <li>
@@ -38,20 +40,22 @@
                                   <img src="assets/images/global.svg" alt="icon">
                                 </button>
                                 <div class="language">
-                                  <a href="#">English</a>
-                                  <a href="#">日本語</a>
+                                    <a href="#">English</a>
+                                    <a href="#">日本語</a>
                                 </div>
-                              </div>
+                            </div>
                         </li>
-                        <li><a href="#contact">
-                            <button class="btn btn-secondary">Contact</button>
-                        </a></li>
+                        <li>
+                            <a href="#contact">
+                                <button class="btn btn-navbar">Contact</button>
+                            </a>
+                        </li>
                     </ul>
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -180,14 +184,16 @@
 
                     <div class="section-content">
                         <h2 class="sub-title">Lorem ipsum</h2>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor arcu nec varius. Nam pulvinar tortor varius mauris gravida pharetra. In tempus nibh risus, id egestas erat interdum vel. Nullam imperdiet, ligula id cursus laoreet, velit ipsum commodo lorem, eu sodales erat nunc eget nulla. Ut erat elit, mollis id maximus id, fringilla sit amet tellus. Pellentesque laoreet convallis sapien, et accumsan justo. Ut feugiat pulvinar augue, eu cursus mauris tempus eget. Quisque vel lectus arcu. Cras vel elementum mi, eu tincidunt mauris. Mauris sem lacus, blandit in tempus at, ultrices quis augue. </p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor arcu nec varius. Nam pulvinar tortor varius mauris gravida pharetra. In tempus nibh risus, id egestas erat interdum vel. Nullam imperdiet, ligula
+                            id cursus laoreet, velit ipsum commodo lorem, eu sodales erat nunc eget nulla. Ut erat elit, mollis id maximus id, fringilla sit amet tellus. Pellentesque laoreet convallis sapien, et accumsan justo. Ut feugiat pulvinar augue,
+                            eu cursus mauris tempus eget. Quisque vel lectus arcu. Cras vel elementum mi, eu tincidunt mauris. Mauris sem lacus, blandit in tempus at, ultrices quis augue. </p>
                         <h4 class="mt-2">Lorem ipsum</h4>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Message end -->
-        
+
         <!-- Compro -->
         <section class="section-2">
             <div class="decor d-left" style="bottom: 0;">
@@ -234,7 +240,10 @@
 
         <!-- Footer -->
         <footer>
-            <div class="container">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                <path d="M 0,400 C 0,400 0,200 0,200 C 142.26666666666665,190 284.5333333333333,180 434,175 C 583.4666666666667,170 740.1333333333334,170 909,175 C 1077.8666666666666,180 1258.9333333333334,190 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eef1f5ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+
+            <div class="container" data-aos="fade-up">
                 <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
                 <div class="grid mt-2">
                     <div class="footer-left">
@@ -249,8 +258,7 @@
                                 <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
                             </div>
                             <div class="language-btn">
-                                <img src="assets/images/global-white.svg" alt="language">
-                                English
+                                <img src="assets/images/global-white.svg" alt="language"> English
                             </div>
                         </div>
                     </div>
@@ -284,4 +292,5 @@
     <!-- js -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

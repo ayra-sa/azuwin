@@ -24,11 +24,23 @@ function closeMenu() {
     // main.classList.remove('on')
 }
 
+// Navbar on scroll
+
+const navbar = document.querySelector('.navbar');
+window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('nav-colored');
+    } else {
+        navbar.classList.remove('nav-colored');
+    }
+};
+
 
 // tab
 
 const tabLink = document.querySelectorAll('.tab-link')
-// const content = document.querySelector('.content-body')
+const tabTitle = document.querySelectorAll('.content')
+    // const content = document.querySelector('.content-body')
 
 // tabLink.addEventListener('click', () => {
 //     content.style.display === 'block' ? content.style.display = 'none' : content.style.display = 'block'
@@ -43,15 +55,15 @@ const tabLink = document.querySelectorAll('.tab-link')
 
 
 function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
-  for (let i = 0; i < tabLink.length; i++) {
-    tabLink[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (let i = 0; i < tabLink.length; i++) {
+        tabLink[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
 }
 
 tabLink.forEach(item => item.addEventListener('click', toggleAccordion));
@@ -71,11 +83,11 @@ lang.addEventListener('click', () => {
 navMenu.addEventListener('click', (e) => {
     const targetMenu = e.target;
 
-    if(targetMenu.classList.contains('nav-link')) {
-            
+    if (targetMenu.classList.contains('nav-link')) {
+
         const menuLinkActive = document.querySelector(".nav-link.active");
 
-        if(menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
+        if (menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
 
             menuLinkActive.classList.remove('active');
         }

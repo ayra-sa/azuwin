@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,23 +18,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
+
 <body>
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" data-aos="zoom-up">
             <div class="container">
                 <div class="navbar-wrap">
                     <a href="index.html" class="brand">
                         <img src="assets/images/logo.svg" alt="brand">
                     </a>
-        
+
                     <ul class="nav-menu">
                         <li><a href="company.html" class="nav-link">Company</a></li>
                         <li><a href="#" class="nav-link">Services</a></li>
@@ -44,20 +43,22 @@
                                   <img src="assets/images/global.svg" alt="icon">
                                 </button>
                                 <div class="language">
-                                  <a href="#">English</a>
-                                  <a href="#">日本語</a>
+                                    <a href="#">English</a>
+                                    <a href="#">日本語</a>
                                 </div>
-                              </div>
+                            </div>
                         </li>
-                        <li><a href="#contact">
-                            <button class="btn btn-secondary">Contact</button>
-                        </a></li>
+                        <li>
+                            <a href="#contact">
+                                <button class="btn btn-navbar">Contact</button>
+                            </a>
+                        </li>
                     </ul>
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -95,7 +96,11 @@
                     <li>Lorem ipsum dolor sit amet.</li>
                 </ul>
 
-                <img src="assets/images/thumb-detail.svg" class="full mt-4" alt="detail">
+
+                <div class="center" style="position: relative;">
+                    <img src="assets/images/td-decor.svg" alt="decor" class="decor right">
+                    <img src="assets/images/thumb-detail.svg" class="mt-4" alt="detail">
+                </div>
 
                 <h2 class="small-title mt-4">Lorem ipsum dolor sit amet consectetur.</h2>
                 <p class="subtitle mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam error in aliquam impedit ducimus accusamus vel sapiente! Iusto, aliquam. Nam reprehenderit optio accusantium voluptatum sunt deserunt, illo blanditiis maiores quibusdam?</p>
@@ -118,18 +123,18 @@
                     <div class="section-content">
                         <img src="assets/images/detail-small.png" alt="thumb">
                     </div>
-        
+
                     <div class="section-content">
                         <h2 class="small-title">Lorem ipsum dolor sit.</h2>
                         <p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ullam nobis commodi.</p>
                     </div>
                 </div>
-        
+
                 <div class="flex align-center reverse mt-4">
                     <div class="section-content">
                         <img src="assets/images/detail-small.png" alt="thumb">
                     </div>
-        
+
                     <div class="section-content">
                         <h2 class="small-title">Lorem ipsum dolor sit.</h2>
                         <p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ullam nobis commodi.</p>
@@ -137,48 +142,48 @@
                 </div>
 
                 <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-                <div class="glass-box">
-                    <span class="blue">Ricardo Chen</span>
-                    <h3>Lorem ipsum dolor sit.</h4>
-                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="glass-box">
+                                <span class="blue">Ricardo Chen</span>
+                                <h3>Lorem ipsum dolor sit.</h4>
+                                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="glass-box">
+                                <span class="blue">Ricardo Chen</span>
+                                <h3>Lorem ipsum dolor sit.</h4>
+                                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="glass-box">
+                                <span class="blue">Ricardo Chen</span>
+                                <h3>Lorem ipsum dolor sit.</h4>
+                                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="glass-box">
+                                <span class="blue">Ricardo Chen</span>
+                                <h3>Lorem ipsum dolor sit.</h4>
+                                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="glass-box">
-                    <span class="blue">Ricardo Chen</span>
-                    <h3>Lorem ipsum dolor sit.</h4>
-                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="glass-box">
-                    <span class="blue">Ricardo Chen</span>
-                    <h3>Lorem ipsum dolor sit.</h4>
-                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="glass-box">
-                    <span class="blue">Ricardo Chen</span>
-                    <h3>Lorem ipsum dolor sit.</h4>
-                    <p class="subtitle ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias dolore. Temporibus numquam quas alias sed vitae ea eligendi architecto assumenda quia? Illo ad qui non cumque ducimus animi quia.</p>
-                </div>
-            </div>
-          
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
 
             </div>
         </section>
 
         <!-- Contact -->
-        <section class="section-2" id="contact">
+        <section class="section" id="contact">
             <div class="decor top">
                 <img src="assets/images/ellipse-decor.svg" alt="decor">
             </div>
@@ -187,10 +192,10 @@
             </div>
 
             <div class="container">
-                <div class="contact">
+                <div class="contact" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="title">CONTACT</h1>
                     <h2 class="small-title">Let's Get In Touch</h2>
-                    <form action="" class="contact-form mt-4">
+                    <form action="mailto:rizkyaryas11@gmail.com" method="POST" enctype="multipart/form-data" name="contactForm" class="contact-form mt-4">
                         <div class="grid">
                             <input type="text" name="company" id="company" placeholder="Company name" required>
                             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -206,10 +211,13 @@
             <div class="decor btm"><img src="assets/images/decor2.svg" alt="decor"></div>
         </section>
         <!-- Contact end -->
-        
+
         <!-- Footer -->
         <footer>
-            <div class="container">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                <path d="M 0,400 C 0,400 0,200 0,200 C 142.26666666666665,190 284.5333333333333,180 434,175 C 583.4666666666667,170 740.1333333333334,170 909,175 C 1077.8666666666666,180 1258.9333333333334,190 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eef1f5ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+
+            <div class="container" data-aos="fade-up">
                 <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
                 <div class="grid mt-2">
                     <div class="footer-left">
@@ -224,8 +232,7 @@
                                 <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
                             </div>
                             <div class="language-btn">
-                                <img src="assets/images/global-white.svg" alt="language">
-                                English
+                                <img src="assets/images/global-white.svg" alt="language"> English
                             </div>
                         </div>
                     </div>
@@ -264,23 +271,24 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50
-          }
-        }
-      });
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50
+                }
+            }
+        });
     </script>
 
 </body>
+
 </html>

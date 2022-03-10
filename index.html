@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
+
 <body>
     <header>
         <!-- Navbar -->
@@ -29,7 +31,7 @@
                     <a href="index.html" class="brand">
                         <img src="assets/images/logo.svg" alt="brand">
                     </a>
-        
+
                     <ul class="nav-menu">
                         <li><a href="company.html" class="nav-link">Company</a></li>
                         <li><a href="#" class="nav-link">Services</a></li>
@@ -40,20 +42,22 @@
                                   <img src="assets/images/global.svg" alt="icon">
                                 </button>
                                 <div class="language">
-                                  <a href="#">English</a>
-                                  <a href="#">日本語</a>
+                                    <a href="#">English</a>
+                                    <a href="#">日本語</a>
                                 </div>
-                              </div>
+                            </div>
                         </li>
-                        <li><a href="#contact">
-                            <button class="btn btn-secondary">Contact</button>
-                        </a></li>
+                        <li>
+                            <a href="#contact">
+                                <button class="btn btn-navbar">Contact</button>
+                            </a>
+                        </li>
                     </ul>
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -70,19 +74,25 @@
             <div class="container">
                 <div class="grid">
                     <div class="left">
-                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">More <br>Digital <br>Experiences</h1>
-                        <div class="w" data-aos="fade-up" data-aos-duration="1500">
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1500">More <br>Digital <br>Experiences</h1>
+                        <div class="w" data-aos="fade-up" data-aos-duration="2000">
                             <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
+                            <a href="company.html">
+                                <button class="btn btn-primary mt-4">Company</button>
+                            </a>
                         </div>
-                        <a href="company.html">
-                            <button class="btn btn-primary mt-4" data-aos="fade-up" data-aos-duration="2000">Company</button>
-                        </a>
+
                     </div>
-    
-                    <div class="right" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="assets/images/hero.svg" alt="hero">
+
+                    <div class="right">
+                        <div class="hero-img">
+                            <img src="assets/images/hero-blue.svg" style="position:absolute" alt="hero" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="assets/images/hero-2.svg" alt="hero" class="img-hero" style="margin: -20% 0 0 10px; z-index: 3;" data-aos="fade-up" data-aos-duration="2000">
+                            <img src="assets/images/hero-1.svg" alt="hero" class="img-hero" style="margin: 0 10px -20% 0; z-index: 3;" data-aos="fade-up" data-aos-duration="3000">
+                        </div>
+                        <!-- <img src="assets/images/hero.svg" alt="hero"> -->
                     </div>
-    
+
                 </div>
                 <a href="#services" class="scroll">
                     <img src="assets/images/scroll.svg" alt="scroll"> SCROLL
@@ -90,9 +100,9 @@
             </div>
         </section>
         <!-- Hero end -->
-        
+
     </header>
-    
+
     <main>
         <!-- Total Services -->
         <section class="section" id="services">
@@ -124,21 +134,21 @@
                             </div>
 
                             <div class="content mt-2">
-                                <h2>Digital Solutions</h2>
+                                <h2 class="tab-title">Digital Solutions</h2>
                                 <div class="content-body">
                                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                        <ul class="tab-list mt-2">
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                        </ul>
-                                        <a href="#">
-                                            <button class="btn btn-primary mt-2">Learn more</button>
-                                        </a>
+                                    <ul class="tab-list mt-2">
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                    </ul>
+                                    <a href="#">
+                                        <button class="btn btn-primary mt-2">Learn more</button>
+                                    </a>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="tab-link" aria-expanded="false">
                             <div class="tab-content">
@@ -146,21 +156,21 @@
                             </div>
 
                             <div class="content mt-2">
-                                <h2>Digital Solutions</h2>
+                                <h2 class="tab-title">Digital Solutions</h2>
                                 <div class="content-body">
                                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                        <ul class="tab-list mt-2">
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                        </ul>
-                                        <a href="#">
-                                            <button class="btn btn-primary mt-2">Learn more</button>
-                                        </a>
+                                    <ul class="tab-list mt-2">
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                    </ul>
+                                    <a href="#">
+                                        <button class="btn btn-primary mt-2">Learn more</button>
+                                    </a>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="tab-link" aria-expanded="false">
                             <div class="tab-content">
@@ -168,26 +178,26 @@
                             </div>
 
                             <div class="content mt-2">
-                                <h2>Digital Solutions</h2>
+                                <h2 class="tab-title">Digital Solutions</h2>
                                 <div class="content-body">
                                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                        <ul class="tab-list mt-2">
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                            <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                        </ul>
-                                        <a href="#">
-                                            <button class="btn btn-primary mt-2">Learn more</button>
-                                        </a>
+                                    <ul class="tab-list mt-2">
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                        <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
+                                    </ul>
+                                    <a href="#">
+                                        <button class="btn btn-primary mt-2">Learn more</button>
+                                    </a>
                                 </div>
                             </div>
-                            
+
                         </div>
 
 
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -212,7 +222,7 @@
                     </div>
 
                     <div class="right absolute" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/images/communication.svg" alt="communication" >
+                        <img src="assets/images/communication.svg" alt="communication">
                     </div>
                 </div>
             </div>
@@ -277,7 +287,7 @@
                 <div class="contact" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="title">CONTACT</h1>
                     <h2 class="small-title">Let's Get In Touch</h2>
-                    <form action="" class="contact-form mt-4">
+                    <form action="mailto:rizkyaryas11@gmail.com" method="POST" enctype="multipart/form-data" name="contactForm" class="contact-form mt-4">
                         <div class="grid">
                             <input type="text" name="company" id="company" placeholder="Company name" required>
                             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -296,6 +306,9 @@
 
         <!-- Footer -->
         <footer>
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                <path d="M 0,400 C 0,400 0,200 0,200 C 142.26666666666665,190 284.5333333333333,180 434,175 C 583.4666666666667,170 740.1333333333334,170 909,175 C 1077.8666666666666,180 1258.9333333333334,190 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eef1f5ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+
             <div class="container" data-aos="fade-up">
                 <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
                 <div class="grid mt-2">
@@ -311,8 +324,7 @@
                                 <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
                             </div>
                             <div class="language-btn">
-                                <img src="assets/images/global-white.svg" alt="language">
-                                English
+                                <img src="assets/images/global-white.svg" alt="language"> English
                             </div>
                         </div>
                     </div>
@@ -331,7 +343,7 @@
                             <li><a href="#">System Development</a></li>
                         </ul>
                         <ul class="footer-menu">
-                            <li>Policy</li>
+                            <li>Work</li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Security Policy</a></li>
                             <li><a href="#">Cookie Policy</a></li>
@@ -348,10 +360,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
     <!-- js -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
