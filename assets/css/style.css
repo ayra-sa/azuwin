@@ -924,11 +924,28 @@ footer .grid {
         display: flex;
         flex-direction: column;
     }
+    .absolute {
+        position: relative;
+    }
+    #communication img {
+        width: inherit;
+    }
     .mt-top {
         margin-top: 25%;
     }
     .flex {
         flex-direction: column;
+    }
+    .tab-content {
+        position: relative;
+    }
+    .tab-link h2 {
+        margin-left: unset;
+        width: unset;
+        margin-top: 20px;
+    }
+    .content-body {
+        width: unset;
     }
     .section-content {
         width: 100%;
