@@ -28,7 +28,7 @@ function closeMenu() {
 
 const navbar = document.querySelector('.navbar');
 window.onscroll = () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) {
         navbar.classList.add('nav-colored');
     } else {
         navbar.classList.remove('nav-colored');
@@ -72,19 +72,6 @@ for (i = 0; i < tabTitle.length; i++) {
     }
 }
 
-// function toggleAccordion() {
-//     const itemToggle = this.getAttribute('aria-expanded');
-
-//     for (let i = 0; i < tabLink.length; i++) {
-//         tabLink[i].setAttribute('aria-expanded', 'false');
-//     }
-
-//     if (itemToggle == 'false') {
-//         this.setAttribute('aria-expanded', 'true');
-//     }
-// }
-
-// tabLink.forEach(item => item.addEventListener('click', toggleAccordion));
 
 //   dropdown
 
@@ -94,6 +81,12 @@ const openLang = document.querySelector('.language')
 lang.addEventListener('click', () => {
     openLang.style.display === 'block' ? openLang.style.display = 'none' : openLang.style.display = 'block'
 })
+
+const langLink = document.querySelectorAll('.language a')
+
+langLink.forEach(l => l.addEventListener('click', () => {
+    openLang.style.display = 'none'
+}))
 
 // nav active
 
