@@ -106,3 +106,112 @@ navMenu.addEventListener('click', (e) => {
         targetMenu.classList.add('active');
     }
 });
+
+//  from validation
+
+const form = document.getElementById('form');
+const namef = document.getElementById('name');
+const comp = document.getElementById('comp');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const msg = document.getElementById('message')
+const danger = document.querySelector('.danger')
+const success = document.querySelector('.success')
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('scs')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('scs');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+    const usernameValue = namef.value.trim();
+    const emailValue = email.value.trim();
+    const companyValue = comp.value.trim();
+    const phoneValue = phone.value.trim();
+    const msgValue = msg.value.trim();
+
+    if(usernameValue === '') {
+        setError(namef, 'Name is required!');
+    } else {
+        setSuccess(namef);
+    }
+
+    if(companyValue === '') {
+        setError(comp, 'Company is required!');
+    } else {
+        setSuccess(comp);
+    }
+
+    if(phoneValue === '') {
+        setError(phone, 'Phone is required!');
+    } else {
+        setSuccess(phone);
+    }
+
+    if(emailValue === '') {
+        setError(email, 'Email is required!');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+
+    if(msgValue === '') {
+        setError(msg, 'Message is required!')
+    } else {
+        setSuccess(msg)
+    }
+};
+
+
+// send mail
+
+const sendMail = (params) => {
+    let tempParams = {
+        from_name: document.getElementById("name").value,
+        formMail: document.getElementById('email').value,
+        formCompany: document.getElementById('company').value,
+        message: document.getElementById('message').value
+    }
+
+    emailjs.send('service_50ic9i6', 'template_qznn0ls', tempParams)
+        .then((res) => {
+            console.log('succes', res)
+        })
+}
+
+const handle = () => {
+    if (namef.value === '' || email.value === '' || company.value === '' || phone.value === '' || msg.value === '') {
+        // validateInputs()
+        danger.classList.add('active')
+    } else {
+        sendMail()
+        form.reset()
+        danger.classList.remove('active')
+        success.classList.add('active')
+    }
+}
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    handle()
+})
