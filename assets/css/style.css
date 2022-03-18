@@ -850,8 +850,12 @@ section {
     border-color: #09c372;
 } */
 
-.input-control.error input, .input-control.error textarea {
+.input-control.er input, .input-control.er textarea {
     border-color: red;
+}
+
+.input-control.scs input, .input-control.scs textarea {
+    border-color: transparent;
 }
 
 .input-control .error {

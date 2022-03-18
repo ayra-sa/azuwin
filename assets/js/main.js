@@ -123,7 +123,7 @@ const setError = (element, message) => {
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
-    inputControl.classList.add('error');
+    inputControl.classList.add('er');
     inputControl.classList.remove('scs')
 }
 
@@ -133,7 +133,7 @@ const setSuccess = element => {
 
     errorDisplay.innerText = '';
     inputControl.classList.add('scs');
-    inputControl.classList.remove('error');
+    inputControl.classList.remove('er');
 };
 
 const isValidEmail = email => {
@@ -188,7 +188,7 @@ const sendMail = (params) => {
     let tempParams = {
         from_name: document.getElementById("name").value,
         formMail: document.getElementById('email').value,
-        formCompany: document.getElementById('company').value,
+        formCompany: document.getElementById('comp').value,
         message: document.getElementById('message').value
     }
 
@@ -198,13 +198,14 @@ const sendMail = (params) => {
         })
 }
 
+
 const handle = () => {
-    if (namef.value === '' || email.value === '' || company.value === '' || phone.value === '' || msg.value === '') {
+    if (namef.value === '' || email.value === '' || comp.value === '' || phone.value === '' || msg.value === '') {
         // validateInputs()
         danger.classList.add('active')
+        success.classList.remove('active')
     } else {
         sendMail()
-        form.reset()
         danger.classList.remove('active')
         success.classList.add('active')
     }
@@ -214,4 +215,5 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 
     handle()
+    form.reset()
 })
