@@ -192,7 +192,7 @@ const sendMail = (params) => {
         message: document.getElementById('message').value
     }
 
-    emailjs.send('service_50ic9i6', 'template_qznn0ls', tempParams)
+    emailjs.send('service_50ic9i6', 'template_felt79m', tempParams)
         .then((res) => {
             console.log('succes', res)
         })
