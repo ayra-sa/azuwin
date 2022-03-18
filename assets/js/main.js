@@ -198,22 +198,39 @@ const sendMail = (params) => {
         })
 }
 
+const my = () => {
+    danger.classList.remove('active')
+    success.classList.add('active')
+}
 
 const handle = () => {
-    if (namef.value === '' || email.value === '' || comp.value === '' || phone.value === '' || msg.value === '') {
+    if (namef.value.trim() === '' || email.value.trim() === '' || comp.value.trim() === '' || phone.value.trim() === '' || msg.value.trim() === '') {
         // validateInputs()
+
+    // setError(namef, 'Name is required!');
+    // setError(comp, 'Company is required!');
+    // setError(phone, 'Phone is required!');
+    // setError(email, 'Email is required!');
+    // setError(msg, 'Message is required!')
+    // form.reset()
         danger.classList.add('active')
         success.classList.remove('active')
     } else {
         sendMail()
-        danger.classList.remove('active')
-        success.classList.add('active')
+        setTimeout(my, 1500)
+        form.reset()
+        // setSuccess(namef);
+        // setSuccess(comp);
+        // setSuccess(phone);
+        // setSuccess(email);
+        // setSuccess(msg)
+    
     }
 }
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-
+    validateInputs()
     handle()
-    form.reset()
+    // form.reset()
 })
