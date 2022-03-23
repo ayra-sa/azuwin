@@ -205,8 +205,8 @@ section {
 
 .title {
     color: var(--mute);
-    font-size: 7em;
-    line-height: 156px;
+    font-size: 8.75em;
+    line-height: 200px;
     font-weight: 600;
 }
 
@@ -614,8 +614,26 @@ section {
     border-left: 4px solid var(--brand);
 }
 
-.tab-link.active h2 {
+.tab-link h2:hover, .tab-link.active h2, .tab-link .tab-title:hover svg {
     color: var(--brand);
+}
+
+.tab-link .tab-title svg {
+    transition: .3s ease;
+    color: #000;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.tab-link.active .tab-title svg {
+    transform: rotate(180deg);
+    color: var(--brand);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .tab-accordion {
@@ -626,10 +644,6 @@ section {
     margin-bottom: 10px;
     position: relative;
     z-index: 3;
-}
-
-.tab-link h2:hover {
-    color: var(--brand);
 }
 
 .tab-link h2 {
@@ -1193,6 +1207,10 @@ footer .grid {
     }
     .absolute {
         position: relative;
+    }
+    .tab-list {
+        display: flex;
+        flex-direction: column;
     }
     #communication .right {
         margin-right: -5%;
