@@ -417,7 +417,6 @@ section {
 .dropbtn {
     background-color: transparent;
     color: white;
-    padding: 16px;
     border: none;
     cursor: pointer;
   }
@@ -428,7 +427,7 @@ section {
   
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
   }
   
   .language {
@@ -437,7 +436,8 @@ section {
     background-color: #fff;
     /* min-width: 10%; */
     width: 120px;
-    /* margin-top: 5px; */
+    top: 0;
+    margin-top: 40px;
     margin-left: -3%;
     z-index: 1;
     border-radius: 8px;
