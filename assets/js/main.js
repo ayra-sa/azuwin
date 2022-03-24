@@ -77,18 +77,26 @@ for (i = 0; i < tabTitle.length; i++) {
 
 //   dropdown
 
-const lang = document.querySelector('.dropbtn')
-const openLang = document.querySelector('.language')
+const ld = document.querySelector(".dropbtn")
 
-lang.addEventListener('click', () => {
-    openLang.style.display === 'block' ? openLang.style.display = 'none' : openLang.style.display = 'block'
+ld.addEventListener('click', () => {
+    document.getElementById("langDropdown").classList.toggle("show");
 })
-
-const langLink = document.querySelectorAll('.language a')
-
-langLink.forEach(l => l.addEventListener('click', () => {
-    openLang.style.display = 'none'
-}))
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    console.log('pp')
+      var dropdowns = document.getElementsByClassName("language");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
 // nav active
 
