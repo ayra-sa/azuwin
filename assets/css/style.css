@@ -425,7 +425,7 @@ section {
     background-color: #2980B9;
   } */
   
-  .dropdown {
+  .dropdown, .language-btn {
     position: relative;
     display: flex;
   }
@@ -436,6 +436,7 @@ section {
     background-color: #fff;
     /* min-width: 10%; */
     width: 120px;
+    cursor: pointer;
     top: 0;
     margin-top: 40px;
     margin-left: -3%;
@@ -446,8 +447,29 @@ section {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
   }
+
+  #language-btm {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /*min-width: 10%;
+    */width: 120px;
+    cursor: pointer;
+    margin-bottom: 40%;
+    margin-left: -3%;
+    z-index: 1;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#language-btm.show {
+    display: block;
+}
   
-  .language a {
+  .language a, #language-btm a {
     float: none;
     color: var(--black-primary);
     padding: 12px 16px;
@@ -458,49 +480,6 @@ section {
   
   .show {display: block;}
 
-/* .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    font-size: inherit;
-    display: flex;
-    cursor: pointer;
-}
-
-.language {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 8%;
-    margin-top: 20px;
-    margin-left: -3%;
-    z-index: 1;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-.language a {
-    float: none;
-    color: var(--black-primary);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.language a:hover {
-    color: var(--brand);
-}
-
-.show {
-    display: block;
-} */
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -1316,6 +1295,9 @@ footer .grid {
     }
     footer {
         margin-top: 20% !important;
+    }
+    footer .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
     footer .brand {
         margin-top: 80px;

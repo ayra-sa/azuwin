@@ -9,8 +9,6 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-    // hero.classList.toggle('on')
-    // main.classList.toggle('on')
 }
 
 const navLink = document.querySelectorAll(".nav-link");
@@ -22,8 +20,6 @@ btnNavbar.addEventListener('click', closeMenu)
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-    // hero.classList.remove('on')
-    // main.classList.remove('on')
 }
 
 // Navbar on scroll
@@ -78,23 +74,39 @@ for (i = 0; i < tabTitle.length; i++) {
 //   dropdown
 
 const ld = document.querySelector(".dropbtn")
+const lb = document.querySelector(".language-btn img")
 
 ld.addEventListener('click', () => {
     document.getElementById("langDropdown").classList.toggle("show");
+})
+
+lb.addEventListener('click', () => {
+    console.log('lo')
+    document.getElementById('language-btm').classList.toggle('show')
 })
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-    console.log('pp')
-      var dropdowns = document.getElementsByClassName("language");
-      var i;
+      let dropdowns = document.getElementsByClassName("language");
+      let i;
       for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
+        let openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
       }
+
+    }
+    
+    if (!event.target.matches('.language-btn img')) {
+        let dropbtm = document.getElementsByClassName("lang-btm")
+        for (let i = 0; i < dropbtm.length; i++) {
+            const element = dropbtm[i];
+            if (element.classList.contains('show')) {
+                element.classList.remove('show')
+            }          
+        }
     }
   }
 
@@ -228,13 +240,7 @@ const handle = () => {
     } else {
         sendMail()
         setTimeout(my, 1500)
-        form.reset()
-        // setSuccess(namef);
-        // setSuccess(comp);
-        // setSuccess(phone);
-        // setSuccess(email);
-        // setSuccess(msg)
-    
+        form.reset()    
     }
 }
 
