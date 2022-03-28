@@ -1,8 +1,6 @@
 // Hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-// const hero = document.querySelector(".hero")
-// const main = document.querySelector(".main")
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -39,17 +37,6 @@ window.onscroll = () => {
 const tabLink = document.querySelectorAll('.tab-link')
 const tabTitle = document.querySelectorAll('.tab-title')
     // const content = document.querySelector('.content-body')
-
-// tabLink.addEventListener('click', () => {
-//     content.style.display === 'block' ? content.style.display = 'none' : content.style.display = 'block'
-// })
-
-// tabLink.forEach(tab => {
-//     tab.addEventListener('click', () => {
-//         console.log('oke')
-//        tab.parentNode.classList.toggle('active')
-//     })
-// })
 
 
 for (i = 0; i < tabTitle.length; i++) {
@@ -227,14 +214,11 @@ const my = () => {
 
 const handle = () => {
     if (namef.value.trim() === '' || email.value.trim() === '' || comp.value.trim() === '' || phone.value.trim() === '' || msg.value.trim() === '') {
-        // validateInputs()
-
     // setError(namef, 'Name is required!');
     // setError(comp, 'Company is required!');
     // setError(phone, 'Phone is required!');
     // setError(email, 'Email is required!');
     // setError(msg, 'Message is required!')
-    // form.reset()
         danger.classList.add('active')
         success.classList.remove('active')
     } else {
