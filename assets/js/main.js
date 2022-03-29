@@ -36,23 +36,23 @@ window.onscroll = () => {
 
 const tabLink = document.querySelectorAll('.tab-link')
 const tabTitle = document.querySelectorAll('.tab-title')
-    // const content = document.querySelector('.content-body')
 
+let i
 
 for (i = 0; i < tabTitle.length; i++) {
-
     tabTitle[i].onclick = function() {
 
-        var contentClass = this.parentNode.className;
+        let contentClass = this.parentNode.classList.value;
 
         for (i = 0; i < tabLink.length; i++) {
             tabLink[i].className = 'tab-link';
         }
 
         if (contentClass == 'tab-link') {
+            this.parentNode.classList = 'tab-link active';
+        }
+         else {
             this.parentNode.className = 'tab-link active';
-        } else {
-            this.parentNode.className = 'tab-link';
         }
     }
 }
