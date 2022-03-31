@@ -1163,12 +1163,17 @@ footer .grid {
     -o-border-radius: 50%;
 }
 
-.swiper-button-next {
-    right: 3px !important;
+#work-detail .swiper-slide {
+    color: inherit;
+    z-index: 1;
 }
 
-.swiper-button-prev {
-    left: 3px !important;
+#work-detail .swiper-button-next {
+    right: 5px !important;
+}
+
+#work-detail .swiper-button-prev {
+    left: 5px !important;
 }
 
 .swiper-button-next::after,
