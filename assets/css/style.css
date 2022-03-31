@@ -772,7 +772,7 @@ section {
 
 #work .swiper::before, #work .swiper::after {
     content: '';
-    width: 55px;
+    width: 75px;
     background: #EEF1F5;
     height: 100%;
     display: block;
@@ -789,14 +789,13 @@ section {
     right: 0;
 }
 
-#work .swiper-wrapper {
-    /* padding: 0 5%; */
-    /* column-gap: 20px; */
+#work .swiper-slide {
+    display: flex;
+    justify-content: center;    
 }
 
 #work .card {
-    /* display: flex;
-    flex-direction: column; */
+    width: 85%;
 }
 
 #work .swiper-slide:nth-child(2n) {
@@ -815,7 +814,7 @@ section {
     height: 53px !important;
     border-radius: 50%;
     position: absolute;
-    top: 35%;
+    top: 50%;
     z-index: 78;
     cursor: pointer;
     display: flex;
@@ -824,7 +823,7 @@ section {
 }
 
 .btn-next {
-    right: 10px;
+    right: 30px;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -833,7 +832,7 @@ section {
 }
 
 .btn-prev {
-    left: 10px;
+    left: 30px;
 }
 
 #work .swiper-button-disabled {
@@ -1266,15 +1265,24 @@ footer .grid {
         display: flex;
         justify-content: space-between;
     }
-    #work .swiper-slide {
-        /* padding: 0; */
-        /* width: unset !important; */
+    #work .swiper {
+        margin-bottom: 150px;
     }
     #work .swiper-slide:nth-child(2n), #work .swiper-slide:nth-child(3n) {
         margin-top: unset;
     }
     #work-page .card-wp:nth-child(even) {
         margin-top: 0 !important;
+    }
+    #work .btn-prev, #work .btn-next {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    #work .btn-next {
+        right: 8px;
+    }
+    #work .btn-prev {
+        left: 8px;
     }
     .mt-top {
         margin-top: 25%;
