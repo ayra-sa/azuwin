@@ -1026,10 +1026,6 @@ footer .grid {
     font-size: .85em;
 }
 
-.copyright span {
-    display: block;
-}
-
 .copyright a {
     color: #fff;
     margin: 0 5px;
@@ -1324,6 +1320,9 @@ footer .grid {
     }
     #language-btm {
         left: 12%;
+    }
+    .copyright span {
+        display: block;
     }
     footer .brand {
         margin-top: 80px;

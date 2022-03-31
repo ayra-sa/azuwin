@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,468 +12,476 @@
 
     <!-- icon -->
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
-
+    
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
     <!-- icon link -->
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/contact.js"></script>
+    <script src="components/footer.js"></script>
 
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-</head>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar" data-aos="zoom-up">
-            <div class="container">
-                <div class="navbar-wrap">
-                    <a href="index.html" class="brand">
-                        <img src="assets/images/logo.svg" alt="brand">
-                    </a>
+      <!-- Navbar -->
+      <navbar-component></navbar-component>
+      <!-- Navbar end -->
 
-                    <ul class="nav-menu">
-                        <li><a href="company.html" class="nav-link">Company</a></li>
-                        <li>
-                            <div class="dropdown-menu">
-                                <a href="#" class="nav-link" id="service-link">Services</a>
-                                <div class="sub-menu">
-                                    <a href="#" class="nav-link">Digital System</a>
-                                    <a href="#" class="nav-link">Website Production</a>
-                                    <a href="#" class="nav-link">System Development</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="work.html" class="nav-link">Work</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <img src="assets/images/global.svg" alt="icon" class="dropbtn">
-                                <div class="language" id="langDropdown">
-                                    <a href="#">English</a>
-                                    <a href="#">日本語</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                <button class="btn btn-navbar">Contact</button>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
+      <!-- Hero -->
+      <section class="hero" id="company">
+        <div class="decor top">
+          <img src="assets/images/ellipse-decor.svg" alt="decor" />
+        </div>
+        <div class="decor right">
+          <img src="assets/images/ellipse-decor2.svg" alt="decor" />
+        </div>
+        <div class="container">
+          <div class="grid">
+            <div class="left">
+              <h1
+                class="hero-title"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                More <br />Digital <br />Experiences
+              </h1>
+              <div class="w" data-aos="fade-up" data-aos-duration="2000">
+                <p class="mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra
+                  mi.
+                </p>
+                <a href="company.html">
+                  <button class="btn btn-primary mt-4">Company</button>
+                </a>
+              </div>
             </div>
-        </nav>
-        <!-- Navbar end -->
 
-        <!-- Hero -->
-        <section class="hero" id="company">
-            <div class="decor top">
-                <img src="assets/images/ellipse-decor.svg" alt="decor">
+            <div class="right">
+              <div class="hero-img">
+                <div class="blob" data-aos="fade-up"></div>
+                <img
+                  src="assets/images/hero-2.svg"
+                  alt="hero"
+                  class="img-hero"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                />
+                <img
+                  src="assets/images/hero-1.svg"
+                  alt="hero"
+                  class="img-hero"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                />
+              </div>
+              <!-- <img src="assets/images/hero.svg" alt="hero"> -->
             </div>
-            <div class="decor right">
-                <img src="assets/images/ellipse-decor2.svg" alt="decor">
-            </div>
-            <div class="container">
-                <div class="grid">
-                    <div class="left">
-                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1500">More <br>Digital <br>Experiences</h1>
-                        <div class="w" data-aos="fade-up" data-aos-duration="2000">
-                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
-                            <a href="company.html">
-                                <button class="btn btn-primary mt-4">Company</button>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="right">
-                        <div class="hero-img">
-                            <div class="blob" data-aos="fade-up"></div>
-                            <img src="assets/images/hero-2.svg" alt="hero" class="img-hero" data-aos="fade-up" data-aos-duration="2000">
-                            <img src="assets/images/hero-1.svg" alt="hero" class="img-hero" data-aos="fade-up" data-aos-duration="3000">
-                        </div>
-                        <!-- <img src="assets/images/hero.svg" alt="hero"> -->
-                    </div>
-
-                </div>
-                <div class="center">
-                    <a href="#services" class="scroll">
-                        <lottie-player src="assets/lottie/lf30_editor_yafb1lh0.json" background="transparent" speed="1" style="width: 40px; height: 40px;" loop autoplay></lottie-player> SCROLL
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Hero end -->
-
+          </div>
+          <div class="center">
+            <a href="#services" class="scroll">
+              <lottie-player
+                src="assets/lottie/lf30_editor_yafb1lh0.json"
+                background="transparent"
+                speed="1"
+                style="width: 40px; height: 40px"
+                loop
+                autoplay
+              ></lottie-player>
+              SCROLL
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Hero end -->
     </header>
 
     <main>
-        <!-- Total Services -->
-        <section class="section" id="services">
-            <div class="top-big-title mr">
-                <h1 class="title">WHAT WE DO</h1>
-            </div>
-            <div class="container">
-                <div class="f">
-                    <div class="tab-menu mt-4" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="grid">
-                            <div class=""></div>
-                            <div class="">
-                                <span class="top-title">Services</span>
-                                <h1 class="small-title mt-4">Total Services</h1>
-                            </div>
-                        </div>
-                        <div class="tab-link active">
-                            <div class="tab-content">
-                                <img src="assets/images/services2.png" alt="services">
-                            <div class="blob-1 decor"></div>
-                                <!-- <img src="assets/images/services-decor.svg" alt="decor" class="decor"> -->
-                            </div>
-
-                            <h2 class="tab-title">Digital Solutions <span class="iconify" data-icon="akar-icons:chevron-down"></span></h2>
-                            <div class="content-body">
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <ul class="tab-list mt-2">
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                </ul>
-                                <a href="#">
-                                    <button class="btn btn-primary mt-2">Learn more</button>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="tab-link">
-                            <div class="tab-content">
-                            <div class="blob-2 decor"></div>
-                                
-                                <img src="assets/images/services.png" alt="services">
-                                <!-- <img src="assets/images/services-decor2.svg" alt="decor" class="decor"> -->
-                            </div>
-
-                            <h2 class="tab-title">Digital Solutions <span class="iconify" data-icon="akar-icons:chevron-down"></span></h2>
-                            <div class="content-body">
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <ul class="tab-list mt-2">
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                </ul>
-                                <a href="#">
-                                    <button class="btn btn-primary mt-2">Learn more</button>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="tab-link">
-                            <div class="tab-content">
-                                <img src="assets/images/services2.png" alt="services">
-                            <div class="blob-3 decor"></div>
-                                <!-- <img src="assets/images/services-decor3.svg" alt="decor" class="decor"> -->
-                            </div>
-
-                            <h2 class="tab-title">Digital Solutions <span class="iconify" data-icon="akar-icons:chevron-down"></span></h2>
-                            <div class="content-body">
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <ul class="tab-list mt-2">
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                    <li><img src="assets/images/bullet.svg" alt="icon"> Digital Transformation</li>
-                                </ul>
-                                <a href="#">
-                                    <button class="btn btn-primary mt-2">Learn more</button>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
+      <!-- Total Services -->
+      <section class="section" id="services">
+        <div class="top-big-title mr">
+          <h1 class="title">WHAT WE DO</h1>
+        </div>
+        <div class="container">
+          <div class="f">
+            <div
+              class="tab-menu mt-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="grid">
+                <div class=""></div>
+                <div class="">
+                  <span class="top-title">Services</span>
+                  <h1 class="small-title mt-4">Total Services</h1>
                 </div>
-            </div>
-        </section>
-        <!-- Total Services end -->
+              </div>
+              <div class="tab-link active">
+                <div class="tab-content">
+                  <img src="assets/images/services2.png" alt="services" />
+                  <div class="blob-1 decor"></div>
+                  <!-- <img src="assets/images/services-decor.svg" alt="decor" class="decor"> -->
+                </div>
 
-        <!-- Communication -->
-        <section class="section" id="communication">
-            <!-- <div class="decor top">
+                <h2 class="tab-title">
+                  Digital Solutions
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:chevron-down"
+                  ></span>
+                </h2>
+                <div class="content-body">
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris aliquet odio a efficitur posuere. Maecenas ac
+                    pharetra mi. Pellentesque habitant morbi tristique senectus
+                    et netus et malesuada fames ac turpis egestas.
+                  </p>
+                  <ul class="tab-list mt-2">
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                  </ul>
+                  <a href="#">
+                    <button class="btn btn-primary mt-2">Learn more</button>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-link">
+                <div class="tab-content">
+                  <div class="blob-2 decor"></div>
+
+                  <img src="assets/images/services.png" alt="services" />
+                  <!-- <img src="assets/images/services-decor2.svg" alt="decor" class="decor"> -->
+                </div>
+
+                <h2 class="tab-title">
+                  Digital Solutions
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:chevron-down"
+                  ></span>
+                </h2>
+                <div class="content-body">
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris aliquet odio a efficitur posuere. Maecenas ac
+                    pharetra mi. Pellentesque habitant morbi tristique senectus
+                    et netus et malesuada fames ac turpis egestas.
+                  </p>
+                  <ul class="tab-list mt-2">
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                  </ul>
+                  <a href="#">
+                    <button class="btn btn-primary mt-2">Learn more</button>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-link">
+                <div class="tab-content">
+                  <img src="assets/images/services2.png" alt="services" />
+                  <div class="blob-3 decor"></div>
+                  <!-- <img src="assets/images/services-decor3.svg" alt="decor" class="decor"> -->
+                </div>
+
+                <h2 class="tab-title">
+                  Digital Solutions
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:chevron-down"
+                  ></span>
+                </h2>
+                <div class="content-body">
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris aliquet odio a efficitur posuere. Maecenas ac
+                    pharetra mi. Pellentesque habitant morbi tristique senectus
+                    et netus et malesuada fames ac turpis egestas.
+                  </p>
+                  <ul class="tab-list mt-2">
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                    <li>
+                      <img src="assets/images/bullet.svg" alt="icon" /> Digital
+                      Transformation
+                    </li>
+                  </ul>
+                  <a href="#">
+                    <button class="btn btn-primary mt-2">Learn more</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Total Services end -->
+
+      <!-- Communication -->
+      <section class="section" id="communication">
+        <!-- <div class="decor top">
                 <img src="assets/images/ellipse-decor-comm.svg" alt="decor">
             </div> -->
 
-            <div class="container">
-                <div class="grid">
-                    <div class="left">
-                        <h1 style="font-size: 1.5em;">Communication Platform</h1>
-                        <img src="assets/images/astrac.svg" class="mt-2" alt="astrac">
-                        <div class="w">
-                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn btn-primary mt-2">Learn more</button>
-                        </a>
-                    </div>
-
-                    <div class="right absolute" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/images/communication.svg" alt="communication">
-                    </div>
-                </div>
+        <div class="container">
+          <div class="grid">
+            <div class="left">
+              <h1 style="font-size: 1.5em">Communication Platform</h1>
+              <img src="assets/images/astrac.svg" class="mt-2" alt="astrac" />
+              <div class="w">
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra
+                  mi.
+                </p>
+              </div>
+              <a href="#">
+                <button class="btn btn-primary mt-2">Learn more</button>
+              </a>
             </div>
-        </section>
-        <!-- Communication end -->
 
-        <!-- Work -->
-        <section class="section" id="work">
-            <!-- <div class="decor right">
+            <div
+              class="right absolute"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="assets/images/communication.svg" alt="communication" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Communication end -->
+
+      <!-- Work -->
+      <section class="section" id="work">
+        <!-- <div class="decor right">
                 <img src="assets/images/ellipse-decor2.svg" alt="decor">
             </div> -->
 
-            <div class="container">
-                <div class="top-big-title ml">
-                    <h1 class="title">CASE STUDY</h1>
+        <div class="container">
+          <div class="top-big-title ml">
+            <h1 class="title">CASE STUDY</h1>
+          </div>
+          <div class="grid mt-4">
+            <span class="top-title">work</span>
+            <a href="work.html" class="btn-transparent mt-2"
+              >All Work <img src="assets/images/arrow-right.svg" alt="icon"
+            /></a>
+          </div>
+        </div>
+        <div class="swiper workSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card" data-aos="fade-up" data-aos-duration="500">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
-                <div class="grid mt-4">
-                    <span class="top-title">work</span>
-                    <a href="work.html" class="btn-transparent mt-2">All Work <img src="assets/images/arrow-right.svg" alt="icon"></a>
+                <a href="#" class="btn-transparent mt-2"
+                  >Learn more
+                  <img src="assets/images/arrow-right.svg" alt="icon"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
+                <a href="#" class="btn-transparent mt-2"
+                  >Learn more
+                  <img src="assets/images/arrow-right.svg" alt="icon"
+                /></a>
+              </div>
             </div>
-            <div class="swiper workSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card" data-aos="fade-up" data-aos-duration="500">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                            <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                            <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                            <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                            <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                            <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                        </div>
-                    </div>
+            <div class="swiper-slide">
+              <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
-                <div class="btn-next"><img src="assets/images/next.svg" alt="next"></div>
-                <div class="btn-prev"><img src="assets/images/prev.svg" alt="prev"></div>
+                <a href="#" class="btn-transparent mt-2"
+                  >Learn more
+                  <img src="assets/images/arrow-right.svg" alt="icon"
+                /></a>
+              </div>
             </div>
-        </section>
-        <!-- Work end -->
-
-        <!-- Contact -->
-        <section class="section" id="contact">
-            <div class="decor bottom d-left">
-                <img src="assets/images/ellipse-decor.svg" alt="decor">
-            </div>
-            <div class="decor btm">
-                <img src="assets/images/ellipse-decor2.svg" alt="decor">
-            </div>
-
-            <div class="container">
-                <div class="contact" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="title">CONTACT</h1>
-                    <h2 class="small-title">Let's Get In Touch</h2>
-                    <form action="" method="POST" id="form" name="contactForm" class="contact-form mt-4">
-                        <div class="grid">
-                            <div class="input-control">
-                                <input type="text" name="company" id="comp" placeholder="Company name">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="text" name="name" id="name" placeholder="Your name">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="email" name="email" id="email" placeholder="Your email">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone number">
-                                <div class="error"></div>
-                            </div>
-                        </div>
-                        <div class="input-control">
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <div class="error"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-4">Send Message</button>
-                    </form>
-                    <div class="danger">Fields cannot be empty! 👆</div>
-                    <div class="success">Your Message Successfully Sent 👍</div>
+            <div class="swiper-slide">
+              <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
+                <a href="#" class="btn-transparent mt-2"
+                  >Learn more
+                  <img src="assets/images/arrow-right.svg" alt="icon"
+                /></a>
+              </div>
             </div>
-            <div class="decor" style="left: 5%; top: -8%;"><img src="assets/images/decor.svg" alt="decor"></div>
-            <div class="decor btm"><img src="assets/images/decor2.svg" alt="decor"></div>
-        </section>
-        <!-- Contact end -->
-
-        <!-- Footer -->
-        <footer>
-            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-                <path d="M 0,400 C 0,400 0,200 0,200 C 142.26666666666665,190 284.5333333333333,180 434,175 C 583.4666666666667,170 740.1333333333334,170 909,175 C 1077.8666666666666,180 1258.9333333333334,190 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eef1f5ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
-
-            <div class="container" data-aos="fade-up">
-                <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
-                <div class="grid mt-2">
-                    <div class="footer-left">
-                        <div class="w">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
-                        </div>
-                        <div class="flex mt-4">
-                            <div class="language-btn">
-                                <div id="language-btm" class="lang-btm">
-                                    <a href="#">English</a>
-                                    <a href="#">日本語</a>
-                                </div>
-                                <img src="assets/images/global-white.svg" alt="language">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid-4">
-                        <ul class="footer-menu">
-                            <li>Company</li>
-                            <!-- <li><a href="#">Services</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Services</li>
-                            <!-- <li><a href="#">Digital Solutions</a></li>
-                            <li><a href="#">Website Production</a></li>
-                            <li><a href="#">System Development</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Work</li>
-                            <!-- <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Security Policy</a></li>
-                            <li><a href="#">Cookie Policy</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Contact</li>
-                        </ul>
-                    </div>
+            <div class="swiper-slide">
+              <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
-
-                <div class="divider mt-4"></div>
-                <div class="footer-btm">
-                    <div class="copyright">
-                        <span>© 2022, Azuwin Inc.</span>
-                        <a href="#">Privacy</a>
-                        <a href="#">Security</a>
-                        <a href="#">Cookie</a>
-                    </div>
-                    <div class="socmed">
-                        <a href="#"><img src="assets/images/fb.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/ig.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/twitter.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
-                    </div>
-                </div>
+                <a href="#" class="btn-transparent mt-2"
+                  >Learn more
+                  <img src="assets/images/arrow-right.svg" alt="icon"
+                /></a>
+              </div>
             </div>
-        </footer>
-        <!-- Footer end -->
+          </div>
+          <div class="btn-next">
+            <img src="assets/images/next.svg" alt="next" />
+          </div>
+          <div class="btn-prev">
+            <img src="assets/images/prev.svg" alt="prev" />
+          </div>
+        </div>
+      </section>
+      <!-- Work end -->
 
+      <!-- Contact -->
+      <contact-component></contact-component>
+      <!-- Contact end -->
+
+      <!-- Footer -->
+      <footer-component></footer-component>
+      <!-- Footer end -->
     </main>
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".workSwiper", {
-            navigation: {
-                nextEl: ".btn-next",
-                prevEl: ".btn-prev",
-            },
-            breakpoints: {
-                375: {
-                    slidesPerView: 1,
-                    spaceBetween: 30
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                }
-            }
-        });
+      var swiper = new Swiper(".workSwiper", {
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
     </script>
 
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("-ih-AP-Hbrl5XOh1S");
-})();
-</script>
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("-ih-AP-Hbrl5XOh1S");
+      })();
+    </script>
+  </body>
 </html>

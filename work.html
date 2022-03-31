@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,249 +8,131 @@
     <meta name="keywords" content="Azuwin" />
     <meta name="author" content="" />
     <meta name="robots" content="noindex" />
-    <title>Work</title>
+    <title>Azuwin</title>
 
     <!-- icon -->
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
-
+    
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-</head>
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/contact.js"></script>
+    <script src="components/footer.js"></script>
+    
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar" data-aos="zoom-up">
-            <div class="container">
-                <div class="navbar-wrap">
-                    <a href="index.html" class="brand">
-                        <img src="assets/images/logo.svg" alt="brand">
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li><a href="company.html" class="nav-link">Company</a></li>
-                        <li>
-                            <div class="dropdown-menu">
-                                <a href="#" class="nav-link" id="service-link">Services</a>
-                                <div class="sub-menu">
-                                    <a href="#" class="nav-link">Digital System</a>
-                                    <a href="#" class="nav-link">Website Production</a>
-                                    <a href="#" class="nav-link">System Development</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="work.html" class="nav-link">Work</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <img src="assets/images/global.svg" alt="icon" class="dropbtn">
-                                <div class="language" id="langDropdown">
-                                    <a href="#">English</a>
-                                    <a href="#">日本語</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                <button class="btn btn-navbar">Contact</button>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar end -->
+      <!-- Navbar -->
+      <navbar-component></navbar-component>
+      <!-- Navbar end -->
     </header>
 
     <main>
+      <h1 class="section-top-title center mt-top">Work</h1>
+      <p class="center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
 
-        <h1 class="section-top-title center mt-top">Work</h1>
-        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- Work list -->
+      <section class="section-2" id="work-page">
+        <div class="decor top">
+          <img src="assets/images/ellipse-decor.svg" alt="decor" />
+        </div>
+        <div class="decor btm">
+          <img src="assets/images/ellipse-decor2.svg" alt="decor" />
+        </div>
 
-        <!-- Work list -->
-        <section class="section-2" id="work-page">
-            <div class="decor top">
-                <img src="assets/images/ellipse-decor.svg" alt="decor">
-            </div>
-            <div class="decor btm">
-                <img src="assets/images/ellipse-decor2.svg" alt="decor">
-            </div>
-
-            <div class="container">
-                <div class="flex mt-4">
-                    <div class="card-wp">
-                        <a href="work-detail.html" class="w-link">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                        </a>
-                        <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                    </div>
-                    <div class="card-wp">
-                        <a href="work-detail.html" class="w-link">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                        </a>
-                        <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                    </div>
-                    <div class="card-wp">
-                        <a href="work-detail.html" class="w-link">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                        </a>
-                        <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                    </div>
-                    <div class="card-wp">
-                        <a href="work-detail.html" class="w-link">
-                            <img src="assets/images/thumb.png" alt="thumbnail">
-                            <p class="name">Ricardo Chen</p>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva mus viverra auctor.</p>
-                            </div>
-                        </a>
-                        <a href="#" class="btn-transparent mt-2">Learn more <img src="assets/images/arrow-right.svg" alt="icon"></a>
-                    </div>
-
+        <div class="container">
+          <div class="flex mt-4">
+            <div class="card-wp">
+              <a href="work-detail.html" class="w-link">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
+              </a>
+              <a href="#" class="btn-transparent mt-2"
+                >Learn more <img src="assets/images/arrow-right.svg" alt="icon"
+              /></a>
             </div>
-        </section>
-        <!-- Work list end -->
-
-        <!-- Contact -->
-        <section class="section" id="contact">
-            <div class="decor bottom d-left">
-                <img src="assets/images/ellipse-decor.svg" alt="decor">
-            </div>
-            <div class="decor btm">
-                <img src="assets/images/ellipse-decor2.svg" alt="decor">
-            </div>
-
-            <div class="container">
-                <div class="contact" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="title">CONTACT</h1>
-                    <h2 class="small-title">Let's Get In Touch</h2>
-                    <form action="" method="POST" id="form" name="contactForm" class="contact-form mt-4">
-                        <div class="grid">
-                            <div class="input-control">
-                                <input type="text" name="company" id="comp" placeholder="Company name">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="text" name="name" id="name" placeholder="Your name">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="email" name="email" id="email" placeholder="Your email">
-                                <div class="error"></div>
-                            </div>
-                            <div class="input-control">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone number">
-                                <div class="error"></div>
-                            </div>
-                        </div>
-                        <div class="input-control">
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <div class="error"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-4">Send Message</button>
-                    </form>
-                    <div class="danger">Fields cannot be empty! 👆</div>
-                    <div class="success">Your Message Successfully Sent 👍</div>
+            <div class="card-wp">
+              <a href="work-detail.html" class="w-link">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
+              </a>
+              <a href="#" class="btn-transparent mt-2"
+                >Learn more <img src="assets/images/arrow-right.svg" alt="icon"
+              /></a>
             </div>
-            <div class="decor" style="left: 5%; top: -8%;"><img src="assets/images/decor.svg" alt="decor"></div>
-            <div class="decor btm"><img src="assets/images/decor2.svg" alt="decor"></div>
-        </section>
-        <!-- Contact end -->
-
-         <!-- Footer -->
-         <footer>
-            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-                <path d="M 0,400 C 0,400 0,200 0,200 C 142.26666666666665,190 284.5333333333333,180 434,175 C 583.4666666666667,170 740.1333333333334,170 909,175 C 1077.8666666666666,180 1258.9333333333334,190 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eef1f5ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
-
-            <div class="container" data-aos="fade-up">
-                <a href="#" class="brand"><img src="assets/images/logo-footer.svg" alt="brand"></a>
-                <div class="grid mt-2">
-                    <div class="footer-left">
-                        <div class="w">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
-                        </div>
-                        <div class="flex mt-4">
-                            <div class="language-btn">
-                                <div id="language-btm" class="lang-btm">
-                                    <a href="#">English</a>
-                                    <a href="#">日本語</a>
-                                </div>
-                                <img src="assets/images/global-white.svg" alt="language">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid-4">
-                        <ul class="footer-menu">
-                            <li>Company</li>
-                            <!-- <li><a href="#">Services</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Services</li>
-                            <!-- <li><a href="#">Digital Solutions</a></li>
-                            <li><a href="#">Website Production</a></li>
-                            <li><a href="#">System Development</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Work</li>
-                            <!-- <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Security Policy</a></li>
-                            <li><a href="#">Cookie Policy</a></li> -->
-                        </ul>
-                        <ul class="footer-menu">
-                            <li>Contact</li>
-                        </ul>
-                    </div>
+            <div class="card-wp">
+              <a href="work-detail.html" class="w-link">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
                 </div>
-
-                <div class="divider mt-4"></div>
-                <div class="footer-btm">
-                    <div class="copyright">
-                        <span>© 2022, Azuwin Inc.</span>
-                        <a href="#">Privacy</a>
-                        <a href="#">Security</a>
-                        <a href="#">Cookie</a>
-                    </div>
-                    <div class="socmed">
-                        <a href="#"><img src="assets/images/fb.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/ig.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/twitter.svg" alt="socmed"></a>
-                        <a href="#"><img src="assets/images/yt.svg" alt="socmed"></a>
-                    </div>
-                </div>
+              </a>
+              <a href="#" class="btn-transparent mt-2"
+                >Learn more <img src="assets/images/arrow-right.svg" alt="icon"
+              /></a>
             </div>
-        </footer>
-        <!-- Footer end -->
+            <div class="card-wp">
+              <a href="work-detail.html" class="w-link">
+                <img src="assets/images/thumb.png" alt="thumbnail" />
+                <p class="name">Ricardo Chen</p>
+                <div class="card-body">
+                  <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h2>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viva mus viverra auctor.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="btn-transparent mt-2"
+                >Learn more <img src="assets/images/arrow-right.svg" alt="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work list end -->
 
+      <!-- Contact -->
+      <contact-component></contact-component>
+      <!-- Contact end -->
+
+      <!-- Footer -->
+      <footer-component></footer-component>
+      <!-- Footer end -->
     </main>
     <!-- js -->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
