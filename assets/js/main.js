@@ -50,8 +50,7 @@ for (i = 0; i < tabTitle.length; i++) {
 
         if (contentClass == 'tab-link') {
             this.parentNode.classList = 'tab-link active';
-        }
-         else {
+        } else {
             this.parentNode.className = 'tab-link active';
         }
     }
@@ -71,31 +70,31 @@ lb.addEventListener('click', () => {
     console.log('lo')
     document.getElementById('language-btm').classList.toggle('show')
 })
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName("language");
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        let dropdowns = document.getElementsByClassName("language");
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-      }
 
     }
-    
+
     if (!event.target.matches('.language-btn img')) {
         let dropbtm = document.getElementsByClassName("lang-btm")
         for (let i = 0; i < dropbtm.length; i++) {
             const element = dropbtm[i];
             if (element.classList.contains('show')) {
                 element.classList.remove('show')
-            }          
+            }
         }
     }
-  }
+}
 
 // nav active
 
@@ -157,25 +156,25 @@ const validateInputs = () => {
     const phoneValue = phone.value.trim();
     const msgValue = msg.value.trim();
 
-    if(usernameValue === '') {
+    if (usernameValue === '') {
         setError(namef, 'Name is required!');
     } else {
         setSuccess(namef);
     }
 
-    if(companyValue === '') {
+    if (companyValue === '') {
         setError(comp, 'Company is required!');
     } else {
         setSuccess(comp);
     }
 
-    if(phoneValue === '') {
+    if (phoneValue === '') {
         setError(phone, 'Phone is required!');
     } else {
         setSuccess(phone);
     }
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setError(email, 'Email is required!');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
@@ -183,7 +182,7 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
-    if(msgValue === '') {
+    if (msgValue === '') {
         setError(msg, 'Message is required!')
     } else {
         setSuccess(msg)
@@ -201,7 +200,7 @@ const sendMail = (params) => {
         message: document.getElementById('message').value
     }
 
-    emailjs.send('service_50ic9i6', 'template_felt79m', tempParams)
+    emailjs.send('service_hsga08l', 'template_felt79m', tempParams)
         .then((res) => {
             console.log('succes', res)
         })
@@ -214,17 +213,17 @@ const my = () => {
 
 const handle = () => {
     if (namef.value.trim() === '' || email.value.trim() === '' || comp.value.trim() === '' || phone.value.trim() === '' || msg.value.trim() === '') {
-    // setError(namef, 'Name is required!');
-    // setError(comp, 'Company is required!');
-    // setError(phone, 'Phone is required!');
-    // setError(email, 'Email is required!');
-    // setError(msg, 'Message is required!')
+        // setError(namef, 'Name is required!');
+        // setError(comp, 'Company is required!');
+        // setError(phone, 'Phone is required!');
+        // setError(email, 'Email is required!');
+        // setError(msg, 'Message is required!')
         danger.classList.add('active')
         success.classList.remove('active')
     } else {
         sendMail()
         setTimeout(my, 1500)
-        form.reset()    
+        form.reset()
     }
 }
 
@@ -232,5 +231,5 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     validateInputs()
     handle()
-    // form.reset()
+        // form.reset()
 })
