@@ -824,7 +824,7 @@ section {
 }
 
 .btn-next {
-    right: 30px;
+    right: 0;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -833,7 +833,7 @@ section {
 }
 
 .btn-prev {
-    left: 30px;
+    left: 0;
 }
 
 #work .swiper-button-disabled {
