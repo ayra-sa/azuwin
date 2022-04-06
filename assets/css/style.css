@@ -379,6 +379,7 @@ section {
     display: none;
     position: absolute;
     background-color: #fff;
+    z-index: 87;
     padding: 21px 29px;
     border-radius: 20px;
     margin-left: -3%;
@@ -1274,15 +1275,21 @@ footer .grid {
     #work-page .card-wp:nth-child(even) {
         margin-top: 0 !important;
     }
+    #work .card {
+        width: 100%;
+    }
     #work .btn-prev, #work .btn-next {
         width: 45px !important;
         height: 45px !important;
     }
+    #work .btn-next, #work .btn-prev {
+        top: 40%;
+    }
     #work .btn-next {
-        right: 8px;
+        right: 0;
     }
     #work .btn-prev {
-        left: 8px;
+        left: 0;
     }
     .mt-top {
         margin-top: 25%;
