@@ -24,7 +24,7 @@ function closeMenu() {
 
 const navbar = document.querySelector('.navbar');
 window.onscroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 20) {
         navbar.classList.add('nav-colored');
     } else {
         navbar.classList.remove('nav-colored');

@@ -16,7 +16,7 @@ class Footer extends HTMLElement {
                     <div class="w">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet odio a efficitur posuere. Maecenas ac pharetra mi.</p>
                     </div>
-                    <div class="flex mt-4">
+                    <div class="mt-4">
                         <div class="language-btn">
                             <div id="language-btm" class="lang-btm">
                                 <a href="#">English</a>
@@ -29,25 +29,25 @@ class Footer extends HTMLElement {
 
                 <div class="grid-4">
                     <ul class="footer-menu">
-                        <li>Company</li>
+                        <li><a href="#">Company</a></li>
                         <!-- <li><a href="#">Services</a></li>
                         <li><a href="#">Work</a></li>
                         <li><a href="#">Contact</a></li> -->
                     </ul>
                     <ul class="footer-menu">
-                        <li>Services</li>
+                        <li><a href="#">Services</a></li>
                         <!-- <li><a href="#">Digital Solutions</a></li>
                         <li><a href="#">Website Production</a></li>
                         <li><a href="#">System Development</a></li> -->
                     </ul>
                     <ul class="footer-menu">
-                        <li>Work</li>
+                        <li><a href="#">Work</a></li>
                         <!-- <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Security Policy</a></li>
                         <li><a href="#">Cookie Policy</a></li> -->
                     </ul>
                     <ul class="footer-menu">
-                        <li>Contact</li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>

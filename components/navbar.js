@@ -17,10 +17,12 @@ class Navbar extends HTMLElement {
                     <li>
                         <div class="dropdown-menu">
                             <a href="#" class="nav-link" id="service-link">Services</a>
-                            <div class="sub-menu">
-                                <a href="#" class="nav-link">Digital System</a>
-                                <a href="#" class="nav-link">Website Production</a>
-                                <a href="#" class="nav-link">System Development</a>
+                            <div class="sub-wrap">
+                                <div class="sub-menu">
+                                    <a href="#" class="nav-link">Digital System</a>
+                                    <a href="#" class="nav-link">Website Production</a>
+                                    <a href="#" class="nav-link">System Development</a>
+                                </div>
                             </div>
                         </div>
                     </li>
