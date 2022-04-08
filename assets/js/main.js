@@ -22,7 +22,7 @@ function closeMenu() {
 
 // Navbar on scroll
 
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.nav-bg');
 window.onscroll = () => {
     if (window.scrollY > 20) {
         navbar.classList.add('nav-colored');

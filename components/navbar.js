@@ -6,6 +6,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <nav class="navbar" data-aos="zoom-up">
+        <div class="nav-bg"></div>
         <div class="container">
             <div class="navbar-wrap">
                 <a href="index.html" class="brand">
